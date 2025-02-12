@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Signup Form</title>
+</head>
+<body>
+  <div class="form-container">
+    <form action="/signup" method="post">
+      <div class="info">
+        <label for="title">Title</label><br>
+        <label>
+          <input type="radio" name="title" value="mr" id="mr">
+          Mr
+        </label>
+        <label>
+          <input type="radio" name="title" value="mrs" id="mrs">
+          Mrs
+        </label>
+        <label>
+          <input type="radio" name="title" value="miss" id="miss">
+          Miss
+        </label>
+      </div>
+
+      <div class="info">
+        <label for="first_name">First name</label>
+        <input type="text" name="first_name" id="first_name">
+      </div>
+
+      <div class="info">
+        <label for="last_name">Last name</label>
+        <input type="text" name="last_name" id="last_name">
+      </div>
+
+      <div class="info">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
+      </div>
+
+      <div class="info">
+        <label for="phone">Phone number</label>
+        <input type="tel" name="phone" id="phone">
+      </div>
+
+      <div class="info">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required>
+      </div>
+
+      <div class="info">
+        <label for="country">Country</label>
+        <select name="country" id="country">
+          <option value="undefined">Undefined</option>
+          <option value="china">China</option>
+          <option value="india">India</option>
+          <option value="united-states">United States</option>
+          <option value="indonesia">Indonesia</option>
+          <option value="brazil">Brazil</option>
+        </select>
+      </div>
+
+      <div class="info">
+        <label>
+          <input type="checkbox" name="terms" value="terms" required>
+          I agree to the <a href="/terms">terms and conditions</a>
+        </label>
+      </div>
+
+      <div class="buttons">
+        <button type="submit">Sign up</button>
+        <button type="reset">Reset form</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
